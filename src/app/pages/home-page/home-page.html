@@ -1,0 +1,84 @@
+<main class="max-w-6xl mx-auto">
+  <section>
+    <app-slide />
+  </section>
+  <section class="border-b border-gray-200 h-[380px]">
+    <div class="flex gap-4 items-center">
+      <div class="h-10 w-5 bg-[#DB4444] rounded-sm"></div>
+      <h3 class="font-semibold text-base/normal text-[#DB4444]">Categories</h3>
+    </div>
+    <div class="flex pt-5 pb-[60px] justify-between">
+      <h2 class="font-semibold text-4xl">Browse By Category</h2>
+      <div class="flex">
+        <div
+          class="flex border-gray-100 rounded-full bg-gray-100 w-[46px] h-[46px] items-center justify-center cursor-pointer"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11 5L4 12L11 19M4 12H20"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div
+          class="flex border-gray-100 rounded-full bg-gray-100 w-[46px] h-[46px] items-center justify-center cursor-pointer"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.5 12H20M20 12L13 5M20 12L13 19"
+              stroke="black"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <app-category-list />
+  </section>
+  <section class="pt-[70px] pb-[140px]">
+    <div class="flex gap-4 items-center">
+      <div class="h-10 w-5 bg-[#DB4444] rounded-sm"></div>
+      <h3 class="font-semibold text-base/normal text-[#DB4444]">This Month</h3>
+    </div>
+    <div class="flex pt-5 pb-[60px] justify-between">
+      <h2 class="font-semibold text-4xl">Best Selling Products</h2>
+      <div class="flex">
+        <div
+          class="flex border-[#DB4444] rounded-sm bg-[#DB4444] text-white w-[159px] h-[56px] items-center justify-center cursor-pointer"
+        >
+          View All
+        </div>
+      </div>
+    </div>
+    <app-best-selling-products/>
+  </section>
+  <section>
+    <app-banner/>
+  </section>
+  <section>
+    <app-explore-products/>
+  </section>
+  <section>
+    <app-new-arrival/>
+  </section>
+  <section class="flex items-center justify-center pt-[140px] pb-[140px]">
+    <app-block/>
+  </section>
+</main>
