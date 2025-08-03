@@ -9,6 +9,7 @@ import { NotFoundPage } from './pages/not-found-page/not-found-page';
 import { Admin } from './layouts/admin/admin';
 import { Categorylist } from './layouts/admin/pages/category-manager/categorylist/categorylist';
 import { Categoryadd } from './layouts/admin/pages/category-manager/categoryadd/categoryadd';
+import { Categoryedit } from './layouts/admin/pages/category-manager/categoryedit/categoryedit';
 
 export const routes: Routes = [
   {
@@ -17,6 +18,7 @@ export const routes: Routes = [
     children: [
       { path: 'category', component: Categorylist },
       { path: 'category/add', component: Categoryadd },
+      { path: 'category/edit/:id', component: Categoryedit },
     ],
   },
   {

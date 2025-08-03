@@ -33,16 +33,16 @@
   ],
   "categories": [
     {
-      "id": 1,
-      "name": "Điện thoại",
+      "name": "Điện thoại update",
       "image": "https://picsum.photos/200/300",
-      "description": "Các dòng smartphone cao cấp"
+      "description": "Các dòng smartphone cao cấp",
+      "id": 1
     },
     {
-      "id": 2,
       "name": "Điện thoại",
       "image": "https://picsum.photos/200/300",
-      "description": "Các dòng smartphone cao cấp"
+      "description": "Các dòng smartphone cao cấp",
+      "id": 2
     }
   ],
   "users": []

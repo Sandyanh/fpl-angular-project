@@ -32,12 +32,12 @@
       </td>
       <td class="py-2 px-4 border">{{ category.description }}</td>
       <td class="py-2 px-4 border text-center">
-        <!-- <button
-          (click)="edit(category)"
+        <button
+          (click)="edit(category.id)"
           class="text-blue-600 hover:underline mr-2"
         >
           Sửa
-        </button> -->
+        </button>
         <button
           (click)="onDelete(category.id)"
           class="text-red-600 hover:underline"

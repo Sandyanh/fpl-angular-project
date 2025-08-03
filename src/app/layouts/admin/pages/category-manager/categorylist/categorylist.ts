@@ -25,7 +25,9 @@ export class Categorylist {
   goToAddCategory() {
     this.router.navigate(['admin/category/add']);
   }
-
+  edit = (id: number) => {
+    this.router.navigate(['admin/category/edit', id]);
+  };
   onDelete = (id: number) => {
     if (confirm('Bạn có chắc muốn xóa?')) {
       this.http.delete(`${this.urlApi}/${id}`).subscribe({
