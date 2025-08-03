@@ -8,14 +8,15 @@ import { Register } from './pages/auth/register/register';
 import { NotFoundPage } from './pages/not-found-page/not-found-page';
 import { Admin } from './layouts/admin/admin';
 import { Categorylist } from './layouts/admin/pages/category-manager/categorylist/categorylist';
+import { Categoryadd } from './layouts/admin/pages/category-manager/categoryadd/categoryadd';
 
 export const routes: Routes = [
   {
     path: 'admin',
     component: Admin,
     children: [
-      { path: 'category', component: Categorylist},
-      
+      { path: 'category', component: Categorylist },
+      { path: 'category/add', component: Categoryadd },
     ],
   },
   {

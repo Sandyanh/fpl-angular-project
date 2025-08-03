@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { ICategory } from '../../../../../interfaces/ICategory';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-categorylist',
@@ -9,6 +10,7 @@ import { ICategory } from '../../../../../interfaces/ICategory';
   styleUrl: './categorylist.css',
 })
 export class Categorylist {
+  router = inject(Router);
   http = inject(HttpClient);
   categories: ICategory[] = [];
   urlApi = 'http://localhost:3000/categories';
@@ -18,6 +20,10 @@ export class Categorylist {
       next: (data: any) => (this.categories = data),
       error: (err) => console.log(err),
     });
+  }
+
+  goToAddCategory() {
+    this.router.navigate(['admin/category/add']);
   }
 
   onDelete = (id: number) => {

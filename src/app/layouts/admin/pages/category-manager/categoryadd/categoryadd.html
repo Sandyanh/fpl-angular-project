@@ -1,0 +1,54 @@
+<h1 class="text-2xl font-bold mb-4">Thêm mới danh mục</h1>
+
+<form
+  class="flex flex-col gap-4 [&_input]:border [&_input]:rounded [&_input]:p-2 [&_span]:text-red-600 max-w-md"
+  [formGroup]="categoryForm"
+  (ngSubmit)="OnSubmit()"
+>
+  <!-- Tên danh mục -->
+  <div>
+    <input
+      type="text"
+      formControlName="name"
+      placeholder="Tên danh mục"
+      class="w-full"
+    />
+    @if ( !categoryForm.controls.name.valid && (categoryForm.controls.name.dirty
+    || categoryForm.controls.name.touched) ) {
+    <span>Tên danh mục không để trống và ≥ 3 ký tự</span>
+    }
+  </div>
+
+  <!-- Ảnh danh mục -->
+  <div>
+    <input
+      type="text"
+      formControlName="image"
+      placeholder="Link ảnh danh mục"
+      class="w-full"
+    />
+    @if ( !categoryForm.controls.image.valid &&
+    (categoryForm.controls.image.dirty || categoryForm.controls.image.touched) )
+    {
+    <span>Ảnh không được để trống</span>
+    }
+  </div>
+
+  <!-- Mô tả danh mục -->
+  <div>
+    <textarea
+      type="text"
+      formControlName="description"
+      placeholder="Mô tả (tùy chọn)"
+      class="w-full"
+    ></textarea>
+  </div>
+
+  <!-- Nút submit -->
+  <button
+    [disabled]="!categoryForm.valid"
+    class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:opacity-50"
+  >
+    Thêm mới
+  </button>
+</form>
