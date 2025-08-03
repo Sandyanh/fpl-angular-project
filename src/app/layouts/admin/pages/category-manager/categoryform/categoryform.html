@@ -1,0 +1,41 @@
+<h1 class="text-xl font-bold mb-4">
+  @if(mode === 'edit') { Cập nhật danh mục } @else { Thêm mới danh mục }
+</h1>
+
+<form
+  class="flex flex-col gap-3 [&_input]:border [&_span]:text-red-600"
+  [formGroup]="categoryForm"
+  (ngSubmit)="onSubmit()"
+>
+  <input type="text" formControlName="name" placeholder="Tên danh mục" />
+  @if (!categoryForm.controls.name.valid && (categoryForm.controls.name.touched
+  || categoryForm.controls.name.dirty)) {
+  <span>Tên danh mục ít nhất 3 ký tự</span>
+  }
+
+  <input type="text" formControlName="image" placeholder="Ảnh (URL)" />
+  @if (!categoryForm.controls.image.valid &&
+  (categoryForm.controls.image.touched || categoryForm.controls.image.dirty)) {
+  <span>Ảnh không được để trống</span>
+  }
+
+  <input type="text" formControlName="description" placeholder="Mô tả" />
+
+  <div class="flex gap-3 items-center">
+    <button
+      [disabled]="!categoryForm.valid"
+      class="bg-blue-600 text-white px-4 py-2 rounded"
+    >
+      {{ mode === "edit" ? "Cập nhật" : "Thêm mới" }}
+    </button>
+    @if (mode === 'edit') {
+    <button
+      type="button"
+      (click)="cancelEdit.emit()"
+      class="text-sm text-gray-600 underline"
+    >
+      Huỷ
+    </button>
+    }
+  </div>
+</form>

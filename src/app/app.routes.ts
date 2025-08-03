@@ -6,8 +6,18 @@ import { ProductDetailsPage } from './pages/product-details-page/product-details
 import { Login } from './pages/auth/login/login';
 import { Register } from './pages/auth/register/register';
 import { NotFoundPage } from './pages/not-found-page/not-found-page';
+import { Admin } from './layouts/admin/admin';
+import { Categorylist } from './layouts/admin/pages/category-manager/categorylist/categorylist';
 
 export const routes: Routes = [
+  {
+    path: 'admin',
+    component: Admin,
+    children: [
+      { path: 'category', component: Categorylist},
+      
+    ],
+  },
   {
     path: '',
     component: Client,

@@ -1,1 +1,46 @@
-<p>admin works!</p>
+<main class="bg-gray-100">
+  <div class="min-h-screen flex">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white shadow-md hidden md:block">
+      <div class="p-4 text-2xl font-bold border-b">Admin Panel</div>
+      <nav class="p-4 space-y-2 text-gray-700">
+        <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100"
+          >Dashboard</a
+        >
+        <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100"
+          >Sản phẩm</a
+        >
+        <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100"
+          >Danh mục</a
+        >
+        <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100"
+          >Người dùng</a
+        >
+      </nav>
+    </aside>
+
+    <!-- Main content wrapper -->
+    <div class="flex-1 flex flex-col">
+      <!-- Topbar -->
+      <header
+        class="bg-white shadow-md px-4 py-3 flex justify-between items-center"
+      >
+        <div class="md:hidden">
+          <button
+            onclick="toggleSidebar()"
+            class="text-gray-600 hover:text-black"
+          >
+            ☰
+          </button>
+        </div>
+        <div class="text-lg font-semibold">Trang quản trị</div>
+        <div class="text-sm text-gray-500">adminso9.vn</div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-6">
+        <router-outlet/>
+      </main>
+    </div>
+  </div>
+</main>
