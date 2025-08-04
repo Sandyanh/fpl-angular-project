@@ -36,5 +36,12 @@
       "id": 2
     }
   ],
-  "users": []
+  "users": [
+    {
+      "email": "phebeo@gmail.com",
+      "password": "$2a$10$W/hN5rTOGxaGf0MM./9UNOgM15YVwM.Y4OdVzOJxQ3WBb3/n4u.Ly",
+      "name": "Phê béo",
+      "id": 1
+    }
+  ]
 }

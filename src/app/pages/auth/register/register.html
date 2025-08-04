@@ -1,1 +1,58 @@
-<p>register works!</p>
+<main class="pt-[60px] pb-[140px]">
+  <div class="flex items-center justify-between">
+    <img
+      src="/images/Side Image.png"
+      alt="Ảnh minh hoạ"
+      width="805"
+      height="781"
+      class="max-w-[805px] max-h-[781px] object-cover"
+    />
+
+    <div class="flex flex-col gap-11 px-16">
+      <h2 class="font-medium text-4xl leading-[30px] tracking-wide">
+        Register to Exclusive
+      </h2>
+      <div class="text-base leading-6">Enter your details below</div>
+
+      <form
+        [formGroup]="registerForm"
+        (ngSubmit)="OnSubmit()"
+        class="flex flex-col gap-10"
+      >
+        <input
+          type="email"
+          formControlName="email"
+          placeholder="Email"
+          class="border-b-[1px] border-gray-400 w-[370px] text-base text-gray-400 leading-6"
+        />
+
+        <input
+          type="password"
+          formControlName="password"
+          placeholder="Password"
+          class="border-b-[1px] border-gray-400 w-[370px] text-base text-gray-400 leading-6"
+        />
+
+        <input
+          type="text"
+          formControlName="name"
+          placeholder="Full Name"
+          class="border-b-[1px] border-gray-400 w-[370px] text-base text-gray-400 leading-6"
+        />
+
+        <div class="flex items-center justify-between">
+          <button
+            type="submit"
+            [disabled]="registerForm.invalid"
+            class="flex items-center justify-center bg-[#DB4444] border-[#DB4444] rounded-sm w-[134px] h-[56px] text-[#FAFAFA] font-medium text-base leading-6 disabled:opacity-50"
+          >
+            Register
+          </button>
+          <div class="text-[#DB4444] text-base leading-6">
+            Already have an account?
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
