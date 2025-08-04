@@ -31,7 +31,7 @@ export const routes: Routes = [
       { path: '', component: HomePage },
       { path: 'category', component: CategoryPage },
       { path: 'category/:id', component: Productbycategory },
-      { path: 'detail', component: ProductDetailsPage },
+      { path: 'product/:id', component: ProductDetailsPage },
       { path: 'login', component: Login },
       { path: 'register', component: Register },
       {
