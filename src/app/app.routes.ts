@@ -11,11 +11,13 @@ import { Categorylist } from './layouts/admin/pages/category-manager/categorylis
 import { Categoryadd } from './layouts/admin/pages/category-manager/categoryadd/categoryadd';
 import { Categoryedit } from './layouts/admin/pages/category-manager/categoryedit/categoryedit';
 import { Productbycategory } from './pages/productbycategory/productbycategory';
+import { authGuard } from './pages/auth/guards/auth-guard';
 
 export const routes: Routes = [
   {
     path: 'admin',
     component: Admin,
+    canActivate: [authGuard],
     children: [
       { path: 'category', component: Categorylist },
       { path: 'category/add', component: Categoryadd },

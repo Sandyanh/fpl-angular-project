@@ -1,0 +1,14 @@
+import { inject } from '@angular/core';
+import { CanActivateFn, Router } from '@angular/router';
+
+export const authGuard: CanActivateFn = (route, state) => {
+  const token = localStorage.getItem('access_token');
+
+  if (token) {
+    return true;
+  }
+
+  const router = inject(Router);
+  alert('Bạn cần đăng nhập để truy cập');
+  return router.createUrlTree(['/login']);
+};
