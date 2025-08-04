@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-productbycategory',
@@ -11,6 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class Productbycategory {
   http = inject(HttpClient);
   params = inject(ActivatedRoute);
+  router = inject(Router);
 
   products: any[] = [];
   categoryName: string = '';
@@ -33,5 +34,8 @@ export class Productbycategory {
         next: (res) => (this.categoryName = res.name),
         error: () => (this.categoryName = ''),
       });
+  }
+  handleDetail(id: number) {
+    this.router.navigate(['/product', id]);
   }
 }
