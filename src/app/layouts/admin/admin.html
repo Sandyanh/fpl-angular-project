@@ -2,18 +2,32 @@
   <div class="min-h-screen flex">
     <!-- Sidebar -->
     <aside class="w-64 bg-white shadow-md hidden md:block">
-      <div class="p-4 text-2xl font-bold border-b">Admin Panel</div>
+      <p class="p-4 text-2xl font-bold border-b">
+        <a routerLink="/admin">Admin Panel</a>
+      </p>
       <nav class="p-4 space-y-2 text-gray-700">
-        <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100"
+        <a
+          routerLink="/admin/dashboard"
+          routerLinkActive="bg-gray-100 font-semibold"
+          class="block px-4 py-2 rounded hover:bg-gray-100"
           >Dashboard</a
         >
-        <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100"
+        <a
+          routerLink="/admin/product"
+          routerLinkActive="bg-gray-100 font-semibold"
+          class="block px-4 py-2 rounded hover:bg-gray-100"
           >Sản phẩm</a
         >
-        <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100"
+        <a
+          routerLink="/admin/category"
+          routerLinkActive="bg-gray-100 font-semibold"
+          class="block px-4 py-2 rounded hover:bg-gray-100"
           >Danh mục</a
         >
-        <a href="#" class="block px-4 py-2 rounded hover:bg-gray-100"
+        <a
+          routerLink="/admin/user"
+          routerLinkActive="bg-gray-100 font-semibold"
+          class="block px-4 py-2 rounded hover:bg-gray-100"
           >Người dùng</a
         >
       </nav>
@@ -39,7 +53,7 @@
 
       <!-- Main Content -->
       <main class="flex-1 p-6">
-        <router-outlet/>
+        <router-outlet />
       </main>
     </div>
   </div>

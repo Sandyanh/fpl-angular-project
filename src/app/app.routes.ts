@@ -10,6 +10,7 @@ import { Admin } from './layouts/admin/admin';
 import { Categorylist } from './layouts/admin/pages/category-manager/categorylist/categorylist';
 import { Categoryadd } from './layouts/admin/pages/category-manager/categoryadd/categoryadd';
 import { Categoryedit } from './layouts/admin/pages/category-manager/categoryedit/categoryedit';
+import { Productbycategory } from './pages/productbycategory/productbycategory';
 
 export const routes: Routes = [
   {
@@ -27,6 +28,7 @@ export const routes: Routes = [
     children: [
       { path: '', component: HomePage },
       { path: 'category', component: CategoryPage },
+      { path: 'category/:id', component: Productbycategory },
       { path: 'detail', component: ProductDetailsPage },
       { path: 'login', component: Login },
       { path: 'register', component: Register },

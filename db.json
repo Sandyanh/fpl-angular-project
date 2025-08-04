@@ -2,46 +2,37 @@
   "products": [
     {
       "id": 1,
-      "ten_san_pham": "Áo thun nam cổ tròn",
-      "hinh_anh": "https://bizweb.dktcdn.net/100/415/697/products/2-a1f3923b-edc0-4612-aa4c-b9b045d48fb6.jpg?v=1706691017533",
-      "gia_tien": 199000
+      "name": "Thức ăn cho chó II",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754278302/Frame_604_suv4o3.png",
+      "price": 199000,
+      "categoryId": 1
     },
     {
       "id": 2,
-      "ten_san_pham": "Giày thể thao nữ Nike Air",
-      "hinh_anh": "https://aothun24h.vn/UserFile/Products/2024_08_26_20_54_48_62.jpg",
-      "gia_tien": 1299000
+      "name": "Thức ăn cho chó I",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754278302/Frame_604_suv4o3.png",
+      "price": 199000,
+      "categoryId": 1
     },
     {
       "id": 3,
-      "ten_san_pham": "Túi xách da bò cao cấp",
-      "hinh_anh": "https://polomanor.vn/cdn/shop/files/polomanor-ao-tshirt-basic-nam-regular-fit-cotton-navy.jpg?v=1751334271",
-      "gia_tien": 850000
-    },
-    {
-      "id": 4,
-      "ten_san_pham": "Đồng hồ thông minh Xiaomi",
-      "hinh_anh": "https://hoaigiangshop.com/wp-content/uploads/2022/05/ao-thun-nam-trang-co-tron-phoi-vest-3.jpg",
-      "gia_tien": 1290000
-    },
-    {
-      "id": 5,
-      "ten_san_pham": "Tai nghe Bluetooth Sony",
-      "hinh_anh": "https://bizweb.dktcdn.net/100/441/136/products/mg-2814-min.jpg?v=1687949115407",
-      "gia_tien": 990000
+      "name": "Thức ăn cho mèo",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754278646/meo-indoor-medium.png_jih6ie.webp",
+      "price": 199000,
+      "categoryId": 2
     }
   ],
   "categories": [
     {
-      "name": "Điện thoại update",
-      "image": "https://picsum.photos/200/300",
-      "description": "Các dòng smartphone cao cấp",
+      "name": "Thức ăn cho chó",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754279287/dog-eating-out-of-bowl_rrbriy.webp",
+      "description": "Thức ăn cho chó",
       "id": 1
     },
     {
-      "name": "Điện thoại",
-      "image": "https://picsum.photos/200/300",
-      "description": "Các dòng smartphone cao cấp",
+      "name": "Thức ăn cho mèo",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754279507/AdobeStock_140702978-min-1024x683_uivx2v.jpg",
+      "description": "Thức ăn cho mèo",
       "id": 2
     }
   ],
