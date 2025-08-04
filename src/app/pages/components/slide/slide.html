@@ -1,7 +1,7 @@
 <main class="flex justify-between pb-14">
   <section class="items-center gap-4 w-[217px] pt-10 border-r border-gray-200">
     <ul class="flex flex-col gap-y-4 pr-4">
-      <li class="flex justify-between cursor-pointer">
+      <!-- <li class="flex justify-between cursor-pointer">
         Woman’s Fashion
         <svg
           width="24"
@@ -15,29 +15,12 @@
             fill="black"
           />
         </svg>
+      </li> -->
+      @for(category of categories; track category.id){
+      <li (click)="goToCategory(category.id)" class="cursor-pointer">
+        {{ category.name }}
       </li>
-      <li class="flex justify-between cursor-pointer">
-        Men’s Fashion
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M12.95 11.636L8 6.68597L9.414 5.27197L15.778 11.636L9.414 18L8 16.586L12.95 11.636Z"
-            fill="black"
-          />
-        </svg>
-      </li>
-      <li class="cursor-pointer">Electronics</li>
-      <li class="cursor-pointer">Home & Lifestyle</li>
-      <li class="cursor-pointer">Medicine</li>
-      <li class="cursor-pointer">Sports & Outdoor</li>
-      <li class="cursor-pointer">Baby’s & Toys</li>
-      <li class="cursor-pointer">Groceries & Pets</li>
-      <li class="cursor-pointer">Health & Beauty</li>
+      }
     </ul>
   </section>
   <section class="pt-10">
