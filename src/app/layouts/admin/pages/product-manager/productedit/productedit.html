@@ -13,8 +13,8 @@
       placeholder="Tên sản phẩm"
       class="w-full"
     />
-    @if (!productForm.controls.name.valid && (productForm.controls.name.dirty
-    || productForm.controls.name.touched)) {
+    @if (!productForm.controls.name.valid && (productForm.controls.name.dirty ||
+    productForm.controls.name.touched)) {
     <span>Tên sản phẩm không hợp lệ</span>
     }
   </div>
@@ -27,9 +27,8 @@
       placeholder="Link ảnh"
       class="w-full"
     />
-    @if (!productForm.controls.image.valid &&
-    (productForm.controls.image.dirty || productForm.controls.image.touched))
-    {
+    @if (!productForm.controls.image.valid && (productForm.controls.image.dirty
+    || productForm.controls.image.touched)) {
     <span>Ảnh không được để trống</span>
     }
   </div>
@@ -50,7 +49,7 @@
   <div>
     <select [(ngModel)]="selectedValue" formControlName="categoryId">
       @for (category of categories; track $index) {
-      <option [ngValue]="category">
+      <option [ngValue]="category" [value]="category.id">
         {{ category.name }}
       </option>
       }
