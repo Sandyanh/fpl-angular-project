@@ -12,6 +12,10 @@ import { Categoryadd } from './layouts/admin/pages/category-manager/categoryadd/
 import { Categoryedit } from './layouts/admin/pages/category-manager/categoryedit/categoryedit';
 import { Productbycategory } from './pages/productbycategory/productbycategory';
 import { authGuard } from './pages/auth/guards/auth-guard';
+import { Productlist } from './layouts/admin/pages/product-manager/productlist/productlist';
+import { Productadd } from './layouts/admin/pages/product-manager/productadd/productadd';
+import { Productedit } from './layouts/admin/pages/product-manager/productedit/productedit';
+import { Searchproduct } from './layouts/admin/pages/searchproduct/searchproduct';
 
 export const routes: Routes = [
   {
@@ -22,6 +26,10 @@ export const routes: Routes = [
       { path: 'category', component: Categorylist },
       { path: 'category/add', component: Categoryadd },
       { path: 'category/edit/:id', component: Categoryedit },
+      { path: 'product', component: Productlist },
+      { path: 'product/search', component: Searchproduct },
+      { path: 'product/add', component: Productadd },
+      { path: 'product/edit/:id', component: Productedit },
     ],
   },
   {

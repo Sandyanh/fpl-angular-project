@@ -1,39 +1,81 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Thức ăn cho chó II",
-      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754278302/Frame_604_suv4o3.png",
-      "price": 199000,
-      "categoryId": 1
+      "name": "Thức ăn Smartheart Gold dành cho chó con và chó mang thai",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754387318/24-large.png_r9hwus.webp",
+      "price": 120000,
+      "description": "Đây là dòng thức ăn cao cấp dành riêng cho chó con (dưới 12 tháng tuổi) và chó mẹ đang mang thai, được sản xuất từ nguồn nguyên liệu chất lượng cao, đạt tiêu chuẩn Nhật Bản. Sản phẩm cung cấp nhiều dưỡng chất, giúp chó con phát triển toàn diện và hỗ trợ sức khỏe cho chó mẹ đang mang thai.",
+      "categoryId": 1,
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Thức ăn cho chó I",
-      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754278302/Frame_604_suv4o3.png",
-      "price": 199000,
-      "categoryId": 1
+      "name": "Thức ăn Smartheart Gold dành cho chó trưởng thành giống nhỏ vị cừu và gạo",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754387385/23-large.png_dwbcnc.webp",
+      "price": 115000,
+      "description": "Đây là dòng thức ăn cao cấp dành riêng cho chó trưởng thành (từ 12 tháng tuổi trở lên) giống nhỏ (từ 10kg trở xuống). Sản phẩm được chế biến từ thịt cừu chất lượng cao của New Zealand và hạt gạo được nhập khẩu từ Thái Lan, mang đến hương vị thơm ngon, đảm bảo dinh dưỡng và giảm thiểu nguy cơ dị ứng cho cún cưng.",
+      "categoryId": 1,
+      "id": 2
     },
     {
       "id": 3,
-      "name": "Thức ăn cho mèo",
+      "name": "Thức ăn hạt Me-O Gold cao cấp dành cho mèo con (Kitten)",
       "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754278646/meo-indoor-medium.png_jih6ie.webp",
       "price": 199000,
+      "description": "Đây là dòng thức ăn hạt cao cấp dành riêng cho mèo con (từ 1 tháng tuổi đến dưới 1 tuổi). Sản phẩm chứa thành phần và công thức chuyên biệt đáp ứng nhu cầu dinh dưỡng đặc biệt giúp mèo con phát triển toàn diện.",
       "categoryId": 2
+    },
+    {
+      "name": "Thức ăn hạt Me-O Gold cao cấp dành cho mèo nuôi trong nhà (Indoor Cat)",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754278646/meo-indoor-medium.png_jih6ie.webp",
+      "price": 90000,
+      "description": "Đây là dòng thức ăn hạt cao cấp dành riêng cho mèo trưởng thành (từ 1 tuổi trở lên). Sản phẩm chứa thành phần và công thức chuyên biệt đáp ứng nhu cầu dinh dưỡng đặc biệt, rất phù hợp với mèo nuôi trong nhà.",
+      "id": 4
+    },
+    {
+      "name": "Thức ăn Smartheart dành cho chim cảnh và sáo nhồng",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754384136/sh-chim-canh-sao-nhong-medium.png_n3ejdo.webp",
+      "price": 120000,
+      "description": "Đây là dòng thức ăn giàu dinh dưỡng dành cho chim cảnh và sáo nhồng. Sản phẩm được thiết kế để đáp ứng nhu cầu đặc biệt của chim trong việc tăng đề kháng và giúp bộ lông luôn bóng khỏe.",
+      "categoryId": 3,
+      "id": 6
     }
   ],
   "categories": [
     {
       "name": "Thức ăn cho chó",
-      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754279287/dog-eating-out-of-bowl_rrbriy.webp",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754385388/9b310bbe-0198-4d12-b831-c560f19f84e9_hybvra.jpg",
       "description": "Thức ăn cho chó",
       "id": 1
     },
     {
       "name": "Thức ăn cho mèo",
-      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754279507/AdobeStock_140702978-min-1024x683_uivx2v.jpg",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754385357/c5935ca0-3768-45a7-83a2-7fbbd372a670_tyj4ch.jpg",
       "description": "Thức ăn cho mèo",
       "id": 2
+    },
+    {
+      "name": "Thức ăn cho chim",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754384758/bai-thuoc-tu-chim-se-chua-nam-gioi-liet-duong-it-tinh_vmchfm.jpg",
+      "description": "Thức ăn cho chim",
+      "id": 3
+    },
+    {
+      "name": "Thức ăn cho cá",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754384412/ca-3-duoi-2_vhji4d.png",
+      "description": "Thức ăn cho cá",
+      "id": 4
+    },
+    {
+      "name": "Thức ăn cho thỏ",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754384478/re7nP5sZCyOYXyaEdpzszcNPZXDsdXblLWA1Lbq1_xkpy5c.jpg",
+      "description": "Thức ăn cho thỏ",
+      "id": 5
+    },
+    {
+      "name": "Thức ăn cho thú cưng nhỏ",
+      "image": "https://res.cloudinary.com/dbfiy3hgq/image/upload/v1754384570/360_f_681163919_71bp2aiyziip3l4j5mbphdxtipdtm2zh_e2c1dbbd-e3b0-4c7d-bc09-1ebff39513ef_g08cri.webp",
+      "description": "Thức ăn cho thú cưng nhỏ",
+      "id": 6
     }
   ],
   "users": [
@@ -42,6 +84,12 @@
       "password": "$2a$10$W/hN5rTOGxaGf0MM./9UNOgM15YVwM.Y4OdVzOJxQ3WBb3/n4u.Ly",
       "name": "Phê béo",
       "id": 1
+    },
+    {
+      "email": "phuonganh@gmail.com",
+      "password": "$2a$10$RZzWWCavTj6JXWbkdOmDjezzNfQAN3dZwDHnM4D37plaQ.D.bB2Zy",
+      "name": "Phuong Anh",
+      "id": 2
     }
   ]
 }

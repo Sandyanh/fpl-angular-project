@@ -1,1 +1,76 @@
-<p>productedit works!</p>
+<h1 class="text-2xl font-bold mb-4">Cập nhật sản phẩm</h1>
+
+<form
+  class="flex flex-col gap-4 [&_input]:border [&_input]:rounded [&_input]:p-2 [&_span]:text-red-600 max-w-md"
+  [formGroup]="productForm"
+  (ngSubmit)="onSubmit()"
+>
+  <!-- Tên -->
+  <div>
+    <input
+      type="text"
+      formControlName="name"
+      placeholder="Tên sản phẩm"
+      class="w-full"
+    />
+    @if (!productForm.controls.name.valid && (productForm.controls.name.dirty
+    || productForm.controls.name.touched)) {
+    <span>Tên sản phẩm không hợp lệ</span>
+    }
+  </div>
+
+  <!-- Ảnh -->
+  <div>
+    <input
+      type="text"
+      formControlName="image"
+      placeholder="Link ảnh"
+      class="w-full"
+    />
+    @if (!productForm.controls.image.valid &&
+    (productForm.controls.image.dirty || productForm.controls.image.touched))
+    {
+    <span>Ảnh không được để trống</span>
+    }
+  </div>
+  <!-- Giá -->
+  <div>
+    <input
+      type="number"
+      formControlName="price"
+      placeholder="Giá sản phẩm"
+      class="w-full"
+    />
+    @if (!productForm.controls.price.valid && (productForm.controls.price.dirty
+    || productForm.controls.price.touched)) {
+    <span>Giá phẩm không được để trống</span>
+    }
+  </div>
+
+  <div>
+    <select [(ngModel)]="selectedValue" formControlName="categoryId">
+      @for (category of categories; track $index) {
+      <option [ngValue]="category">
+        {{ category.name }}
+      </option>
+      }
+    </select>
+  </div>
+
+  <!-- Mô tả -->
+  <div>
+    <input
+      type="text"
+      formControlName="description"
+      placeholder="Mô tả (tùy chọn)"
+      class="w-full"
+    />
+  </div>
+
+  <button
+    [disabled]="!productForm.valid"
+    class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 disabled:opacity-50"
+  >
+    Cập nhật
+  </button>
+</form>
