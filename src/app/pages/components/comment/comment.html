@@ -1,0 +1,18 @@
+<main class="pt-15">
+  <form [formGroup]="commentForm" (ngSubmit)="onSubmit()" class="space-y-4">
+  <ngx-editor-menu [editor]="editor" [toolbar]="toolbar"></ngx-editor-menu>
+  <ngx-editor
+    [editor]="editor"
+    formControlName="content"
+    placeholder="Nhập bình luận..."
+  ></ngx-editor>
+
+  <button
+    type="submit"
+    [disabled]="!commentForm.valid"
+    class="bg-blue-600 text-white px-4 py-2 mt-3 rounded"
+  >
+    Gửi bình luận
+  </button>
+</form>
+</main>

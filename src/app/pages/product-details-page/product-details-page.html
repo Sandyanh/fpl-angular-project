@@ -86,9 +86,7 @@
           <div class="text-2xl leading-6 tracking-tighter">
             ${{ product.price }}
           </div>
-          <div
-            class="text-sm leading-[21px] w-[373px] h-[87px]"
-          >
+          <div class="text-sm leading-[21px] w-[373px] h-[87px]">
             {{ product.description }}
           </div>
           <div class="flex gap-6">
@@ -196,6 +194,20 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div>
+      <app-comment (commentAdd)="handleComment($event)" />
+      <div class="list-comment mt-8">
+        @for(comment of comments; track $index){
+        <section class="my-3">
+          <div class="flex items-center gap-2.5">
+            <div class="font-bold">{{ comment.username }}</div>
+            <small class="text-gray-400">{{ comment.createAt }}</small>
+          </div>
+          <div class="text-sm" [innerHTML]="comment.content"></div>
+        </section>
+        }
       </div>
     </div>
     <div class="pt-[140px]">

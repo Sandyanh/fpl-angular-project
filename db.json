@@ -78,6 +78,43 @@
       "id": 6
     }
   ],
+  "comments": [
+    {
+      "content": "<p>haha</p>",
+      "createAt": "2025-08-05T18:29:37.083Z",
+      "username": "Phê béo",
+      "productId": "1",
+      "id": 1
+    },
+    {
+      "content": "<p><strong><u>Hello</u></strong></p>",
+      "createAt": "2025-08-05T18:49:01.202Z",
+      "username": "Phê béo",
+      "productId": "1",
+      "id": 2
+    },
+    {
+      "content": "<p>dsdf</p>",
+      "createAt": "2025-08-05T18:58:03.007Z",
+      "username": "Phê béo",
+      "productId": "1",
+      "id": 3
+    },
+    {
+      "content": "<p>abc</p>",
+      "createAt": "2025-08-05T19:04:27.252Z",
+      "username": "Phê béo",
+      "productId": "1",
+      "id": 4
+    },
+    {
+      "content": "<p>hehe</p>",
+      "createAt": "2025-08-05T19:04:34.075Z",
+      "username": "Phê béo",
+      "productId": "1",
+      "id": 5
+    }
+  ],
   "users": [
     {
       "email": "phebeo@gmail.com",
