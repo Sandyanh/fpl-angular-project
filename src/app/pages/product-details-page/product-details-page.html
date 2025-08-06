@@ -197,7 +197,15 @@
       </div>
     </div>
     <div>
+      @if(isLogin){
       <app-comment (commentAdd)="handleComment($event)" />
+      }@else{
+      <p class="text-red-600">
+        Bạn cần
+        <a routerLink="/login" class="underline text-blue-600">đăng nhập</a> để
+        bình luận.
+      </p>
+      }
       <div class="list-comment mt-8">
         @for(comment of comments; track $index){
         <section class="my-3">

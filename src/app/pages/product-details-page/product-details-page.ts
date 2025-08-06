@@ -1,13 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { ExploreItem } from '../components/explore-item/explore-item';
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule, RouterOutlet } from '@angular/router';
 import { Comment } from '../components/comment/comment';
 import { IComment } from '../../interfaces/IComment';
 
 @Component({
   selector: 'app-product-details-page',
-  imports: [ExploreItem, Comment],
+  imports: [ExploreItem, Comment, RouterModule],
   templateUrl: './product-details-page.html',
   styleUrl: './product-details-page.css',
 })
@@ -22,13 +22,16 @@ export class ProductDetailsPage {
       next: (res) => (this.product = res),
       error: () => alert('Không tìm thấy sản phẩm!'),
     });
-    this.http.get(`http://localhost:3000/comments?productId=${this.id}`).subscribe({
-      next: (res) => {
-        this.comments = res;
-      },
-    });
+    this.http
+      .get(`http://localhost:3000/comments?productId=${this.id}`)
+      .subscribe({
+        next: (res) => {
+          this.comments = res;
+        },
+      });
   }
   handleComment(newComment: any) {
     this.comments.push(newComment);
   }
+  isLogin = !!localStorage.getItem('access_token');
 }
