@@ -22,7 +22,7 @@ export class ProductDetailsPage {
       next: (res) => (this.product = res),
       error: () => alert('Không tìm thấy sản phẩm!'),
     });
-    this.http.get(`http://localhost:3000/comments`).subscribe({
+    this.http.get(`http://localhost:3000/comments?productId=${this.id}`).subscribe({
       next: (res) => {
         this.comments = res;
       },
