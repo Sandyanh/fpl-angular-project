@@ -113,6 +113,27 @@
       "username": "Phê béo",
       "productId": "1",
       "id": 5
+    },
+    {
+      "content": "<p>Tuyệt vời</p>",
+      "createAt": "2025-08-06T06:37:16.308Z",
+      "username": "Phê béo",
+      "productId": "3",
+      "id": 6
+    },
+    {
+      "content": "<p><em><s>ahihi</s></em></p>",
+      "createAt": "2025-08-06T06:37:47.284Z",
+      "username": "Phê béo",
+      "productId": "3",
+      "id": 7
+    },
+    {
+      "content": "<p><strong>haha</strong></p>",
+      "createAt": "2025-08-06T07:42:01.187Z",
+      "username": "Phê béo",
+      "productId": "1",
+      "id": 8
     }
   ],
   "users": [

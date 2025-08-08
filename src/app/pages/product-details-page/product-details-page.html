@@ -200,7 +200,7 @@
       @if(isLogin){
       <app-comment (commentAdd)="handleComment($event)" />
       }@else{
-      <p class="text-red-600">
+      <p class="text-red-600 mt-5">
         Bạn cần
         <a routerLink="/login" class="underline text-blue-600">đăng nhập</a> để
         bình luận.
@@ -218,7 +218,7 @@
         }
       </div>
     </div>
-    <div class="pt-[140px]">
+    <div class="pt-[50px]">
       <div class="flex gap-4 items-center pb-[60px]">
         <div class="h-10 w-5 bg-[#DB4444] rounded-sm"></div>
         <h3 class="font-semibold text-base/normal text-[#DB4444]">
